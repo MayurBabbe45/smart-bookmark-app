@@ -73,27 +73,6 @@ tailwind.config.ts    # Tailwind + DaisyUI config (dark theme only)
 - Add a table called `bookmarks` with columns: `id`, `title`, `url`, `user_id`, `created_at`.
 - Use the **anon** key and **project URL** in your `.env` file or Vercel environment variables.
 
-### Vercel
-
-This app is built with Next.js and works out of the box on Vercel. To deploy:
-
-1. Connect your GitHub repository to Vercel.
-2. Add the same environment variables in the Vercel dashboard under **Settings > Environment Variables**:
-   - `NEXT_PUBLIC_SUPABASE_URL`
-   - `NEXT_PUBLIC_SUPABASE_ANON_KEY`
-3. (Optional) create Vercel secrets and reference them in a `vercel.json`:
-   ```json
-   {
-     "version": 2,
-     "env": {
-       "NEXT_PUBLIC_SUPABASE_URL": "@supabase-url",
-       "NEXT_PUBLIC_SUPABASE_ANON_KEY": "@supabase-anon-key"
-     }
-   }
-   ```
-4. Push to `main` (or your production branch) and Vercel will build and deploy automatically.
-
-> The default build command (`npm run build`) and output directory (`.next`) are standard for Next.js, so no additional configuration is required unless you customise the project.
 
 ## 🧾 Notes
 
